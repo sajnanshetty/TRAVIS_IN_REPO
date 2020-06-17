@@ -8,6 +8,7 @@ before_install:
   - pip install -U pytest
   - pip install codecov
 script:
-  - py.test --cov-report term-missing --cov library/ test/units/library/  -v
+  #- py.test --cov-report term-missing --cov library/ test/units/library/  -v
+  - py.test test/units/library/test_addition.py  -v
 after_success:
   - codecov
