@@ -5,6 +5,7 @@ python:
 before_install:
   - python --version
   - pip install -U pip
+  - python setup.py install
   - pip install -U pytest
   - pip install codecov
 script:
